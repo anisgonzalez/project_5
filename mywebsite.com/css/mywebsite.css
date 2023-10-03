@@ -1,0 +1,74 @@
+@media screen{ /* media queries*/
+.nav-menu{
+  font-size: 150%;
+  text-align: center;
+  gap: 2.0rem;
+  
+}
+body{
+background-color: rgb(196, 204, 253)
+}
+
+section{
+  font-size:18px;
+}
+article{
+  font-size:18px;
+}
+
+img{
+  border-style: solid;
+  height: 90%;/*how to make image auto size?*/
+  width:85%;
+}
+.grid-container { /* advanced grid*/
+  display: grid;
+  grid-template-areas: 
+    "header header header header header"
+    " main main main main aside"
+    "main main main main aside"
+    "footer footer footer footer footer"
+  ;
+  min-height: 80vh;
+  margin-top: 4rem;
+  gap: 0.5rem;
+}
+
+.grid-item {
+  font-size: 1.0rem;
+  background-color:rgb(207, 213, 249) ;
+  padding: 1rem;
+}
+
+.header {
+  grid-area: header;
+  font-size: 26px;
+text-align:center; 
+font-weight:bold;
+}
+.main {
+  grid-area: main;
+  font-size: 22px;
+
+}
+
+.aside {
+  grid-area: aside;
+}
+
+.footer {
+  grid-area: footer;
+  text-align:center;
+
+}
+a:hover{ /* psuedo-class item*/
+  color:rgb(131, 146, 249);
+
+}
+a{
+  color:black;
+  text-decoration: none;
+  padding:14px 16px;
+}
+
+}
